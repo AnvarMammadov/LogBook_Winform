@@ -36,16 +36,16 @@
             this.cmbTestScore = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbClassScore = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbDiamond3 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.btnDeleteDiamond = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnComment = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panelRb = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.rbRed = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.rbYellow = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.cbDiamond3 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.pbUserPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnDeleteDiamond = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnComment = new Guna.UI2.WinForms.Guna2ImageButton();
             this.cbDiamond1 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.cbDiamond2 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.txtComment = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pbUserPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
             this.panelRb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPicture)).BeginInit();
@@ -191,6 +191,48 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1580, 80);
             this.guna2Panel1.TabIndex = 15;
             // 
+            // cbDiamond3
+            // 
+            this.cbDiamond3.CheckedState.Image = global::LogBook_Winform.Properties.Resources.diamond_color_48;
+            this.cbDiamond3.CheckedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.cbDiamond3.HoverState.ImageSize = new System.Drawing.Size(42, 42);
+            this.cbDiamond3.Image = global::LogBook_Winform.Properties.Resources.diamod_color_black48;
+            this.cbDiamond3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.cbDiamond3.ImageRotate = 0F;
+            this.cbDiamond3.ImageSize = new System.Drawing.Size(40, 40);
+            this.cbDiamond3.Location = new System.Drawing.Point(1265, 23);
+            this.cbDiamond3.Name = "cbDiamond3";
+            this.cbDiamond3.Size = new System.Drawing.Size(48, 36);
+            this.cbDiamond3.TabIndex = 12;
+            this.cbDiamond3.CheckedChanged += new System.EventHandler(this.cbDiamond3_CheckedChanged);
+            // 
+            // btnDeleteDiamond
+            // 
+            this.btnDeleteDiamond.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnDeleteDiamond.HoverState.ImageSize = new System.Drawing.Size(66, 66);
+            this.btnDeleteDiamond.Image = global::LogBook_Winform.Properties.Resources.buttonX;
+            this.btnDeleteDiamond.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnDeleteDiamond.ImageRotate = 0F;
+            this.btnDeleteDiamond.Location = new System.Drawing.Point(1319, 24);
+            this.btnDeleteDiamond.Name = "btnDeleteDiamond";
+            this.btnDeleteDiamond.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnDeleteDiamond.Size = new System.Drawing.Size(31, 28);
+            this.btnDeleteDiamond.TabIndex = 13;
+            // 
+            // btnComment
+            // 
+            this.btnComment.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnComment.HoverState.ImageSize = new System.Drawing.Size(34, 34);
+            this.btnComment.Image = global::LogBook_Winform.Properties.Resources.comment;
+            this.btnComment.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnComment.ImageRotate = 0F;
+            this.btnComment.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnComment.Location = new System.Drawing.Point(1375, 20);
+            this.btnComment.Name = "btnComment";
+            this.btnComment.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnComment.Size = new System.Drawing.Size(41, 36);
+            this.btnComment.TabIndex = 14;
+            // 
             // panelRb
             // 
             this.panelRb.BackColor = System.Drawing.Color.Transparent;
@@ -240,57 +282,6 @@
             this.rbYellow.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rbYellow.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // cbDiamond3
-            // 
-            this.cbDiamond3.CheckedState.Image = global::LogBook_Winform.Properties.Resources.diamond_color_48;
-            this.cbDiamond3.CheckedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.cbDiamond3.HoverState.ImageSize = new System.Drawing.Size(42, 42);
-            this.cbDiamond3.Image = global::LogBook_Winform.Properties.Resources.diamod_color_black48;
-            this.cbDiamond3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.cbDiamond3.ImageRotate = 0F;
-            this.cbDiamond3.ImageSize = new System.Drawing.Size(40, 40);
-            this.cbDiamond3.Location = new System.Drawing.Point(1265, 23);
-            this.cbDiamond3.Name = "cbDiamond3";
-            this.cbDiamond3.Size = new System.Drawing.Size(48, 36);
-            this.cbDiamond3.TabIndex = 12;
-            // 
-            // pbUserPicture
-            // 
-            this.pbUserPicture.ImageRotate = 0F;
-            this.pbUserPicture.Location = new System.Drawing.Point(47, 8);
-            this.pbUserPicture.Name = "pbUserPicture";
-            this.pbUserPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbUserPicture.Size = new System.Drawing.Size(56, 60);
-            this.pbUserPicture.TabIndex = 1;
-            this.pbUserPicture.TabStop = false;
-            // 
-            // btnDeleteDiamond
-            // 
-            this.btnDeleteDiamond.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnDeleteDiamond.HoverState.ImageSize = new System.Drawing.Size(66, 66);
-            this.btnDeleteDiamond.Image = global::LogBook_Winform.Properties.Resources.buttonX;
-            this.btnDeleteDiamond.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnDeleteDiamond.ImageRotate = 0F;
-            this.btnDeleteDiamond.Location = new System.Drawing.Point(1319, 24);
-            this.btnDeleteDiamond.Name = "btnDeleteDiamond";
-            this.btnDeleteDiamond.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnDeleteDiamond.Size = new System.Drawing.Size(31, 28);
-            this.btnDeleteDiamond.TabIndex = 13;
-            // 
-            // btnComment
-            // 
-            this.btnComment.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnComment.HoverState.ImageSize = new System.Drawing.Size(34, 34);
-            this.btnComment.Image = global::LogBook_Winform.Properties.Resources.comment;
-            this.btnComment.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnComment.ImageRotate = 0F;
-            this.btnComment.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnComment.Location = new System.Drawing.Point(1375, 20);
-            this.btnComment.Name = "btnComment";
-            this.btnComment.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnComment.Size = new System.Drawing.Size(41, 36);
-            this.btnComment.TabIndex = 14;
-            // 
             // cbDiamond1
             // 
             this.cbDiamond1.CheckedState.Image = global::LogBook_Winform.Properties.Resources.diamond_color_48;
@@ -304,6 +295,7 @@
             this.cbDiamond1.Name = "cbDiamond1";
             this.cbDiamond1.Size = new System.Drawing.Size(48, 36);
             this.cbDiamond1.TabIndex = 10;
+            this.cbDiamond1.CheckedChanged += new System.EventHandler(this.cbDiamond1_CheckedChanged);
             // 
             // cbDiamond2
             // 
@@ -318,6 +310,7 @@
             this.cbDiamond2.Name = "cbDiamond2";
             this.cbDiamond2.Size = new System.Drawing.Size(47, 36);
             this.cbDiamond2.TabIndex = 11;
+            this.cbDiamond2.CheckedChanged += new System.EventHandler(this.cbDiamond2_CheckedChanged);
             // 
             // txtComment
             // 
@@ -339,6 +332,16 @@
             this.txtComment.Size = new System.Drawing.Size(140, 32);
             this.txtComment.TabIndex = 20;
             this.txtComment.Visible = false;
+            // 
+            // pbUserPicture
+            // 
+            this.pbUserPicture.ImageRotate = 0F;
+            this.pbUserPicture.Location = new System.Drawing.Point(47, 8);
+            this.pbUserPicture.Name = "pbUserPicture";
+            this.pbUserPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbUserPicture.Size = new System.Drawing.Size(56, 60);
+            this.pbUserPicture.TabIndex = 1;
+            this.pbUserPicture.TabStop = false;
             // 
             // UcDisplayUser
             // 

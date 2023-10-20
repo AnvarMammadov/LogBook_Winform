@@ -13,9 +13,7 @@ namespace LogBook_Winform
         public Image UserImage { get; set; }
         public DateTime LastSeen { get; set; }
         public bool IsTakePart { get; set; }
-        public bool IsLater { get; set; }
-        public bool IsAbsent { get; set; }
-        public bool IsOnline { get; set; }
+        public string MarkPresence { get; set; }
         public int TestScore { get; set; }
         public int ClassScore { get; set; }
         public  int DiamondCount { get; set; }

@@ -37,11 +37,13 @@
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblAllDiamondCount = new System.Windows.Forms.Label();
+            this.cbAllMarkOnline = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.rbAllMarkPresence = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelUserDisplay = new System.Windows.Forms.FlowLayoutPanel();
             this.scrollPanelUserDisplay = new Guna.UI2.WinForms.Guna2VScrollBar();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -159,6 +159,20 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(173, 51);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(28, 28);
+            this.guna2ImageButton1.Image = global::LogBook_Winform.Properties.Resources.pencil;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(135, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(29, 35);
+            this.guna2ImageButton1.TabIndex = 6;
+            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
@@ -172,9 +186,9 @@
             // 
             this.guna2GradientPanel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox1);
-            this.guna2GradientPanel2.Controls.Add(this.label12);
-            this.guna2GradientPanel2.Controls.Add(this.guna2CustomCheckBox1);
-            this.guna2GradientPanel2.Controls.Add(this.guna2CustomRadioButton1);
+            this.guna2GradientPanel2.Controls.Add(this.lblAllDiamondCount);
+            this.guna2GradientPanel2.Controls.Add(this.cbAllMarkOnline);
+            this.guna2GradientPanel2.Controls.Add(this.rbAllMarkPresence);
             this.guna2GradientPanel2.Controls.Add(this.label11);
             this.guna2GradientPanel2.Controls.Add(this.label10);
             this.guna2GradientPanel2.Controls.Add(this.label9);
@@ -191,47 +205,58 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(1358, 84);
             this.guna2GradientPanel2.TabIndex = 0;
             // 
-            // label12
+            // guna2PictureBox1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1069, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 23);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "5";
+            this.guna2PictureBox1.Image = global::LogBook_Winform.Properties.Resources.diamond_color_48;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1097, 19);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 12;
+            this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2CustomCheckBox1
+            // lblAllDiamondCount
             // 
-            this.guna2CustomCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(702, 57);
-            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomCheckBox1.TabIndex = 10;
-            this.guna2CustomCheckBox1.Text = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 1;
-            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.lblAllDiamondCount.AutoSize = true;
+            this.lblAllDiamondCount.Location = new System.Drawing.Point(1072, 28);
+            this.lblAllDiamondCount.Name = "lblAllDiamondCount";
+            this.lblAllDiamondCount.Size = new System.Drawing.Size(19, 23);
+            this.lblAllDiamondCount.TabIndex = 11;
+            this.lblAllDiamondCount.Text = "5";
             // 
-            // guna2CustomRadioButton1
+            // cbAllMarkOnline
             // 
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(559, 50);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(15, 15);
-            this.guna2CustomRadioButton1.TabIndex = 9;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.cbAllMarkOnline.BackColor = System.Drawing.Color.Transparent;
+            this.cbAllMarkOnline.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbAllMarkOnline.CheckedState.BorderRadius = 2;
+            this.cbAllMarkOnline.CheckedState.BorderThickness = 0;
+            this.cbAllMarkOnline.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbAllMarkOnline.Location = new System.Drawing.Point(702, 57);
+            this.cbAllMarkOnline.Name = "cbAllMarkOnline";
+            this.cbAllMarkOnline.Size = new System.Drawing.Size(20, 20);
+            this.cbAllMarkOnline.TabIndex = 10;
+            this.cbAllMarkOnline.Text = "guna2CustomCheckBox1";
+            this.cbAllMarkOnline.UncheckedState.BorderColor = System.Drawing.Color.Gray;
+            this.cbAllMarkOnline.UncheckedState.BorderRadius = 1;
+            this.cbAllMarkOnline.UncheckedState.BorderThickness = 0;
+            this.cbAllMarkOnline.UncheckedState.FillColor = System.Drawing.Color.White;
+            // 
+            // rbAllMarkPresence
+            // 
+            this.rbAllMarkPresence.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbAllMarkPresence.CheckedState.BorderThickness = 0;
+            this.rbAllMarkPresence.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbAllMarkPresence.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbAllMarkPresence.Location = new System.Drawing.Point(559, 50);
+            this.rbAllMarkPresence.Name = "rbAllMarkPresence";
+            this.rbAllMarkPresence.Size = new System.Drawing.Size(15, 15);
+            this.rbAllMarkPresence.TabIndex = 9;
+            this.rbAllMarkPresence.Text = "guna2CustomRadioButton1";
+            this.rbAllMarkPresence.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbAllMarkPresence.UncheckedState.BorderThickness = 2;
+            this.rbAllMarkPresence.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbAllMarkPresence.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // label11
             // 
@@ -254,7 +279,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(807, 28);
+            this.label9.Location = new System.Drawing.Point(801, 28);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(39, 23);
             this.label9.TabIndex = 6;
@@ -334,31 +359,6 @@
             this.scrollPanelUserDisplay.Size = new System.Drawing.Size(10, 365);
             this.scrollPanelUserDisplay.TabIndex = 10;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::LogBook_Winform.Properties.Resources.diamond_color_48;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1094, 19);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 12;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2ImageButton1.Image = global::LogBook_Winform.Properties.Resources.pencil;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(135, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(29, 35);
-            this.guna2ImageButton1.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -413,10 +413,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rbAllMarkPresence;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox cbAllMarkOnline;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblAllDiamondCount;
         private System.Windows.Forms.FlowLayoutPanel panelUserDisplay;
         private Guna.UI2.WinForms.Guna2VScrollBar scrollPanelUserDisplay;
     }
